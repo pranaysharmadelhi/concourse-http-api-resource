@@ -88,7 +88,7 @@ def test_empty_check(httpbin):
 
     check = cmd('check', source)
 
-    assert check == []
+    assert check == {'version': {'ref': 'none'}}
 
 
 def test_data_urlencode(httpbin):
