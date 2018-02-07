@@ -82,7 +82,7 @@ class HTTPResource:
         status_code, text = self.cmd(command_argument, rendered_params)
 
         # return empty version object
-        response = {"version": {}}
+        response = {"version":  {"ref":"none"}}
 
         if os.environ.get('TEST', False):
             response.update(json.loads(text))

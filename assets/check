@@ -1,4 +1,4 @@
 #!/bin/sh
 
 # empty response to keep Concourse happy
-echo "[]"
+echo '{"version":{"ref":"none"}}'
