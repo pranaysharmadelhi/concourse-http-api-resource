@@ -11,7 +11,7 @@ ENVIRONMENT = {
     'TEST': 'true',
 }
 
-def cmd(cmd_name, source, args: list = [], version={}, params={}):
+def cmd(cmd_name, source, args: list = [], version={'version': {'ref': 'none'}}, params={}):
     """Wrap command interaction for easier use with python objects."""
 
     in_json = json.dumps({
